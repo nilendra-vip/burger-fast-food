@@ -314,6 +314,7 @@
         position: absolute;
         bottom: 0;
         right: 0;
+        padding-left: 30px;
     }
     #page7 #text h1{
         font-size: 10vw;
