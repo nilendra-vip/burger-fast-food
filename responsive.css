@@ -298,6 +298,7 @@
     /* Page 7 */
 
     #page7 #shape{
+        width: 100%;
         height: 40vh;
     }
     #page7 #shape img{
