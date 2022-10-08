@@ -1,0 +1,380 @@
+@media (max-width:700px) {
+    #main{
+        overflow-x: hidden;
+    }
+/* ------------------------------------------------------------------------------------------------------------------ */
+    /* Page 1 */
+    #page1{
+        height: max-content;
+        padding: 0;
+    }
+    #page1 #nav{
+        padding: 0 10px;
+    }
+    #page1 #nav i{
+        font-size: 6vw;
+    }
+    #page1 #data{
+        height: 100vh;
+        display: inline-block;
+    }
+    #page1 #data #left{
+        width: 100%;
+        height: max-content;
+        padding: 30px 20px;
+        gap: 20px;
+        justify-content: flex-start;
+    }
+    #page1 #data #left h1{
+        font-size: 14vw;        
+    }
+    
+    #page1 #data #left p{
+        width: 100%;
+        font-size:4vw;
+        line-height: 1;
+    }
+    #page1 #data #left button{
+        font-size: 4vw;        
+    }
+
+    #page1 #data #right{
+        width: 100%;
+        height:50vh;
+        flex-direction: column;  
+        margin-top: 50px;
+    }
+    #page1 #data #right #box{
+        width: 350px;
+        height: 350px;   
+    }
+    #page1 #data #right #box img{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+    #page1 #bottom{
+        margin-top: 60px;
+        display: flex;
+        overflow-x: auto;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    #page1 #bottom::-webkit-scrollbar{
+        display: none;
+    }
+    #page1 #bottom .box{
+        width: 80%;
+        height: 100%;
+        padding: 20px 0;
+    }
+    #page1 #swipe{
+        width: 100%;
+        height: 10vh;
+        /* background-color: yellow; */
+        margin-bottom:20px ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: gilroy;
+        font-size: 5vw;
+        padding-bottom: 20px;
+        
+    }
+
+        
+/* ----------------------------------------------------------------------------- */
+
+    /* Page 2 */
+    #page2{
+        height: max-content;
+    }
+    #page2 .container{
+        height: 100%;
+        padding: 50px 0;
+    }
+    
+    #page2 .container .card{
+        width: 90%;
+        height:50%;
+    }
+    #page2 .container .card .face.face1{
+        border-radius: 50px 50px 0 0;
+        transform: translateY(0);
+        box-shadow: 
+        inset 0 0 60px whitesmoke,
+        inset 20px 0 80px #f0f,
+        inset -20px 0 80px #0ff,
+        inset 20px 0 300px #f0f,
+        inset -20px 0 300px #0ff,
+        0 0 50px #fff,
+        -10px 0 80px #f0f,
+        10px 0 80px #0ff;
+    }
+    #page2 .container .card:hover .face.face1{
+        transform: translateY(0);
+        
+    }
+    #page2 .container .card .face.face2{
+        text-align: center;
+        padding: 20px;
+        margin-top: 0;
+    }
+    #page2 .container .card .face.face2 .content h3{
+        font-size: 10vw;
+        text-transform: capitalize;
+    }
+    #page2 .container .card .face.face2 .content p{
+        font-size:3vw;
+    }
+    #page2 .container .card .face.face2 .content a{
+        font-size: 4vw;
+        padding: 10px 20px;
+    }
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+    /* Page 3 */
+    #page3{
+        height: 100vh;
+    }
+    #page3 #box1{
+        height: 40vh;
+    }
+    
+    #page3 img{
+        height: 100%;
+    }
+    #page3 #box1 #box2{
+        height: 50vh;
+        flex-direction: column;
+        gap: 10px;
+        flex-shrink: 0;
+        overflow-x: auto;
+        padding: 15px;
+    }
+    #page3 #box1 #box2::-webkit-scrollbar{
+        display: none;
+    }
+    #page3 #box1 #box2 .part{
+        width: 90%;
+        height: 100%;
+    }
+    #page3 #box1 #box2 .part:hover{
+        scale: 1;
+    }
+    #page3 #box1 #box2 .part .heading{
+        gap: 20px;
+        padding-left: 30px;
+    }
+    #page3 #box1 #box2 .part .heading .circle{
+        width: 60px;
+        height: 60px;
+        font-size: 10vw;
+    }
+    #page3 #box1 #box2 .part .heading h2{
+        font-family: druk;
+        font-size: 10vw;
+    }
+    #page3 #box1 #box2 .part button{
+        font-size: 3.5vw;
+    }
+
+    #page3 #box3{
+        width: 100%;
+        height: 5vh;
+        /* background-color: yellow; */
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: gilroy;
+        font-size: 5vw;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+    }
+    
+    
+/* ------------------------------------------------------------------------------------------------------------------ */
+    /* Page 4 */
+
+    #page4{
+        height: 55vh;
+    }
+    #page4 #box img{
+        height: 50%;
+    }
+    #page4 #box #text{
+        height: 50vh;
+        left: 15px;
+        gap: 10px;
+        padding: 0;
+    }
+    #page4 #box #text h2{
+        font-size: 3.5vw;
+        font-family: gilroy;
+    }
+    #page4 #box #text h1{
+        font-size: 13vw;
+        font-family: gilroy;
+    }
+    #page4 #box #text button{
+        padding: 15px 30px;
+        font-size: 3vw;
+    }
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+    /* Page 5 */
+
+    #page5{
+        height: 80vh;
+    }
+    #page5 #top h1{
+        font-family: druk;
+        font-size: 15vw;
+    }
+    #page5 #top p{
+        font-size: 3vw;
+    }
+    #page5 #middle{
+        width: 100%;
+        height: 10vh;
+        /* background-color: yellow; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5vw;
+        font-family: gilroy;
+        text-transform: capitalize;
+    }
+
+    #page5 #bottom{
+        height: 40vh;
+        padding: 10px 0;
+        flex-direction: row;
+        flex-shrink: 0;
+        overflow-x: auto;
+    }
+    #page5 #bottom .box{
+        width: 80%;
+    }
+    #page5 #bottom .box .text{
+        width: 50%;
+    }
+    #page5 #bottom .box .text h2{
+        font-size: 5vw;
+    }
+    #page5 #bottom .box .text h3{
+        font-size: 3.5vw;
+    }
+    #page5 #bottom .box .text button{
+        padding: 10px 30px;
+        font-size: 3vw;
+    }
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+    /* Page 6 */
+    #page6 #box{
+        width: 90%;
+        height: 90vh;
+        background-color: white;
+    }
+    #page6 .swiper-slide .box h2{
+        font-size: 10vw;
+    }
+    #page6 .swiper-slide .box p{
+        font-size: 3.5vw;
+    }
+    #page6 .swiper-slide .box button{
+        padding: 10px 30px;
+        font-size: 4vw;
+    }
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+    /* Page 7 */
+
+    #page7 #shape{
+        height: 40vh;
+    }
+    #page7 #shape img{
+        height: 90%;
+    }
+    #page7 #small-shape{
+        width: 30%;
+        height: 20%;
+        position: absolute;
+        top: 75%;
+        right: 10%;
+        z-index: 1;
+    }
+    #page7 #text{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    #page7 #text h1{
+        font-size: 10vw;
+    }
+    #page7 #text p{
+        font-size: 4vw;
+        line-height: 1;
+        
+    }
+    #page7 #text button{
+        font-size: 3vw;
+    }
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+    /* Page 8 */
+
+    #page8{
+        height: 150vh;
+        display: inline-block;
+    }
+    #page8 #left{
+        width: 100%;
+        height: 50vh;
+    }
+
+    #page8 #right{
+        width: 100%;
+    }
+    
+    #page8 #box #top .photo .photo-front {
+        font-size: 4vw;
+    }
+    
+    #page8 #box #top .photo .photo-back #pic{
+        width: 130px;
+        height: 130px;
+    }
+    #page8 #box #top .photo .photo-back h1{
+        font-size: 9vw;
+        letter-spacing: 2px;
+        line-height: 1;
+    }
+    #page8 #box #top .photo .photo-back h3{
+        font-size: 3.5vw;
+    }
+    #page8 #box #top .photo .photo-back p{
+        font-size: 5vw;
+    }
+    #page8 #box #top .photo #part2{
+        flex-direction: column;
+        font-size: 10vw;
+    }
+
+    #page8 #box #middle button{
+        font-size: 5vw;
+    }
+
+    #page8 #box #bottom{
+        justify-content: space-between;
+        font-size:3vw;
+    }
+
+/* ----------------------------------------------------------------------------------------------- */
+}

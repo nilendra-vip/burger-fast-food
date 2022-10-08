@@ -1,0 +1,858 @@
+/* Font Addition */
+@font-face {
+    font-family: yank;
+    src: url(./fonts/yank-webfont.ttf);
+}
+@font-face {
+    font-family: gilroy;
+    src: url(./fonts/Gilroy-Regular.otf);
+}
+
+/* CSS Boiler plate */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    user-select: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+button,i{
+    cursor: pointer;
+}
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Main Body*/
+#main{
+    width: 100%;
+    /* min-height: max-content; */
+    /* background-color: tomato; */
+}
+/* ---------------------------------------------------------------------------------------- */
+/* Page 1 */
+#page1{
+    width: 100%;
+    height: 160vh;
+    background-color:white;
+    padding: 0 50px;
+}
+#page1 #nav{
+    width: 100%;
+    height: 10vh;
+    /* background-color:yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 1px dashed gray;
+}
+#page1 #nav #logo{
+    width: 150px;
+    height: 80%;
+    background-color: white;
+}
+#page1 #nav #logo img{
+    height: 100%;
+    width: 100%;
+    object-position: center;
+}
+#page1 #nav i{
+    font-size: 2.5vw;
+    padding-right: 30px;
+}
+
+#page1 #data{
+    width: 100%;
+    height: 90vh;
+    /* background-color:tomato; */
+    display: flex;
+}
+#page1 #data #left{
+    width: 50%;
+    height: 100%;
+    /* background-color: pink; */
+    padding: 70px 0 0 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: flex-start;
+}
+#page1 #data #left h1{
+    font-family: gilroy;
+    font-size: 6vw;
+    line-height: 1;
+}
+#page1 #data #left h1 span{
+    color:rgb(160, 20, 160);
+}
+#page1 #data #left h1 span{
+    text-shadow: -7px 7px 10px rgb(144, 0, 255);
+}
+#page1 #data #left p{
+    font-family: gilroy;
+    font-size: 1.3vw;
+    line-height: 2vw;
+    width: 500px;
+    padding: 20px 0;
+}
+#page1 #data #left button{
+    padding: 15px 50px;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    color: white;
+    background:linear-gradient(to right,#561DAA,#DA069D);
+    border: none;
+    border-radius: 50px;
+}
+#page1 #data #left button:hover{
+    background:linear-gradient(to right,#DA069D,#561DAA);
+    cursor: pointer;
+}
+
+
+#page1 #data #right{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(192, 255, 249); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page1 #data #right #box{
+    width: 600px;
+    height: 600px;
+    background:linear-gradient(to right,#561DAA,#DA069D);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+}
+#page1 #data #right #box img{
+    height: 90%;
+    border-radius: 50%;
+}
+#page1 #bottom{
+    width: 100%;
+    height: 50vh;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#page1 #bottom .box{
+    width: 23%;
+    height: 90%;
+    background-color: white;
+    overflow: hidden;
+}
+#page1 #bottom .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+#page1 #bottom .box img:hover{
+    scale: 1.2;
+}
+#page1 #swipe{
+    display: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Page 2 */
+#page2{
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(228, 224, 224);
+}
+#page2 .container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#page2 .container .card{
+    width: 50%;
+    height:60%;
+    position: relative;
+}
+#page2 .container .card .face{
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease;
+}
+#page2 .container .card .face.face1{
+    background-color: red;
+    border-radius: 50px 50px 15px 15px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(91, 90, 90);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+#page2 .container .card:hover .face.face1{
+    transform: translateY(-50px);
+    box-shadow: 
+    inset 0 0 60px whitesmoke,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+}
+#page2 .container .card .face.face1 .content{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+    text-align: center;
+}
+
+#page2 .container .card .face.face1 .content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#page2 .container .card .face.face2{
+    position: relative;
+    height: max-content;
+    background-color: whitesmoke;
+    padding: 20px 20px 20px 40px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    border-radius: 0 0 50px 50px;
+    margin-top: -60px;
+}
+#page2 .container .card:hover .face.face2{
+    transform: translateY(0);
+}
+#page2 .container .card .face.face2 .content h3{
+    font-size: 3vw;
+    font-family: yank;
+    color:red;
+}
+#page2 .container .card .face.face2 .content p{
+    font-size: 1.2vw;
+    font-family: gilroy;
+    color:black;
+}
+#page2 .container .card .face.face2 .content a{
+    text-decoration: none;
+    font-size: 1.4vw;
+    color: white;
+    outline: 1px solid #333;
+    padding: 15px 30px;
+    margin: 10px 0;
+    display: inline-block;
+    border-radius: 50px;
+    background:linear-gradient(to right,#561DAA,#DA069D) ;
+}
+#page2 .container .card .face.face2 .content a:hover{
+    color: black;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------- */
+/* Page 3 */
+#page3{
+    width: 100%;
+    height: 160vh;
+    background-color:#272121;
+}
+#page3 #box1{
+    height: 100%;
+    height: 100vh;
+    /* background-color: yellow; */
+}
+
+#page3 img{
+    width: 100%;
+    height: 60vh;
+    /* object-fit: cover; */
+}
+#page3 #box3{
+    display: none;
+}
+#page3 #box1 #box2{
+    width: 100%;
+    height: 100vh;
+    /* background-color: yellowgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#page3 #box1 #box2 .part{
+    width: 30%;
+    height: 40%;
+    background-color:#575454;
+    padding: 20px;
+    color: white;
+    transition: all 1s ease;
+}
+#page3 #box1 #box2 .part:hover{
+    scale: 1.15;
+}
+#page3 #box1 #box2 .part .heading{
+    width: 100%;
+    height: 100px;
+    /* background-color:gray; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 30px;
+}
+#page3 #box1 #box2 .part .heading .circle{
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5vw;
+    font-family: serif;
+    font-weight: 500;
+    opacity: 0.7;
+}
+#page3 #box1 #box2 .part .heading h2{
+    font-family: yank;
+    font-size: 3vw;
+    opacity: 0.9;
+    text-transform: capitalize;
+}
+#page3 #box1 #box2 .part p{
+    padding: 20px 0;
+    font-style: italic;
+    letter-spacing: 2px;
+    opacity: 0.6;
+    font-family: gilroy;
+}
+#page3 #box1 #box2 .part button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 10px 0 5px 0;
+    font-size: 1vw;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+}
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Page 4 */
+#page4{
+    width: 100%;
+    height: 100vh;
+    /* background-color:turquoise; */
+}
+#page4 #box{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#page4 #box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+#page4 #box #text{
+    /* width: 500px; */
+    height: 95vh;
+    /* background-color: white; */
+    /* z-index: 1; */
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    color: white;
+}
+#page4 #box #text h2{
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    font-family: yank;
+}
+#page4 #box #text h1{
+    font-size: 7vw;
+    text-transform: capitalize;
+}
+#page4 #box #text button{
+    padding: 20px 40px;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(to right,#561DAA,#DA069D);
+    color: white;
+    
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------- */
+/* Page 5 */
+#page5{
+    width: 100%;
+    height: 160vh;
+    background-color:white;
+}
+#page5 #top{
+    width: 100%;
+    height: 30vh;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page5 #top #box{
+    width: 60%;
+    text-align: center;
+}
+#page5 #top h1{
+    font-family: yank;
+    text-transform: uppercase;
+    font-size: 5vw;
+}
+#page5 #top p{
+    font-size: 1.3vw;
+    font-family: gilroy;
+}
+#page #middle{
+    display: none;
+}
+
+#page5 #bottom{
+    width: 100%;
+    height: 120vh;
+    /* background-color: rgb(0, 255, 38); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+#page5 #bottom .box{
+    width: 40%;
+    height: 35vh;
+    background-color: #0ff;
+    position: relative;
+}
+#page5 #bottom .box img{
+    width: 100%;
+    height: 100%;
+}
+#page5 #bottom .box .text{
+    width: 40%;
+    height:100%;
+    background-color:rgba(27, 26, 26, 0.826);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#page5 #bottom .box .text h2{
+    font-family: gilroy;
+    font-size: 2vw;
+    text-transform: capitalize;
+    color: white;
+}
+#page5 #bottom .box .text h3{
+    font-family: gilroy;
+    font-size: 1.5vw;
+    text-transform: capitalize;
+    color: red;
+}
+#page5 #bottom .box .text button{
+    padding: 10px 40px;
+    color: white;
+    background-color: red;
+    border: none;
+    font-size: 1.2vw;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+}
+#page5 #bottom .box .text button:hover{
+    scale: 1.2;
+}
+
+/* -----------------------------------------------------------------------------------------------------------------------------------*/
+
+/* page 6 */
+#page6{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(68, 66, 66);
+    background-image: url(./images/p7img.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+#page6 #box{
+    width: 35%;
+    height: 80vh;
+    background-color: white;
+}
+#page6 #box .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  #page6 #box .swiper-slide {
+    text-align: center;
+    /* font-size: 18px; */
+    /* background: red; */
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  #page6 #box .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #page6 .swiper-slide .box{
+    width: 100%;
+    height: 100%;
+    /* background-color:olivedrab; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    /* box-shadow: inset 10px 10px 20px #0ff,inset -10px -10px 20px #f0f; */
+  }
+  #page6 .swiper-slide .box .logopic{
+      width: 100px;
+      height: 100px;
+      /* background-color: red; */
+      border-radius: 50%;
+      /* overflow: hidden; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+   #page6 .swiper-slide .box .logopic img{
+        /* width: 80%; */
+        height: 100%;
+        /* object-fit: cover; */
+        /* object-position: center; */
+   }
+  
+
+  #page6 .swiper-slide .box h2{
+      font-family:gilroy;
+      font-size: 3vw;
+      /* font-weight: 100; */
+    }
+#page6 .swiper-slide .box p{
+    width: 80%;
+    font-size: 1.5vw;
+}
+#page6 .swiper-slide .box button{
+    padding: 10px 40px;
+    border: 2px solid red;
+    border-radius: 50px;
+    font-size: 1.2vw;
+    background-color: transparent;
+}
+  
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Page 7 */
+#page7{
+    width: 100%;
+    height: 100vh;
+    background-color:gainsboro;
+    /* display: flex; */
+    position: relative;
+}
+#page7 #shape{
+    width: 50%;
+    height: 80vh;
+    background:linear-gradient(to right,#561DAA,#DA069D);
+    border-radius:40% 39% 70% 20% / 58% 30% 40% 82% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 50%; */
+    overflow: hidden;
+    /* opacity: 0.7; */
+}
+#page7 #shape img{
+    /* width: 80%; */
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#page7 #small-shape{
+    width: 20%;
+    height: 50%;
+    background:linear-gradient(to right,#561DAA,#DA069D);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* transform: translate(-50%,-50%); */
+}
+#page7 #text{
+    width: 400px;
+    height: 350px;
+    background-color: white;
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
+    /* transform: translate(-50%,-50%); */
+    /* border-top-right-radius: 40%; */
+}
+#page7 #text h1{
+    font-size: 2.5vw;
+    font-family: yank;
+    padding: 10px;
+}
+#page7 #text p{
+    font-size: 1vw;
+    padding: 10px 10px;
+    width: 350px;
+    line-height: 1.5vw;
+    
+}
+#page7 #text button{
+    margin: 20px 10px;
+    font-size: 1.3vw;
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(to right,#561DAA,#DA069D);
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: gilroy;
+    font-weight: 600;
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* Page 8 */
+#page8{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+}
+#page8 #left{
+    width: 50%;
+    height: 100vh;
+    background-color:tomato;
+    position: relative;
+}
+#page8 #left #box{
+    width: 60%;
+    height: 100%;
+    background-color: #1A1A1A;
+}
+#page8 #left #box #photo{
+    width: 85%;
+    height: 70%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);   
+}
+#page8 #left #box #photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#page8 #right{
+    width: 50%;
+    height: 100vh;
+    /* background-color: rgb(71, 145, 255); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page8 #box{
+    width: 90%;
+    height: 100%;
+    /* background-color: white; */
+}
+#page8 #box #top{
+    width: 100%;
+    height: 50%;
+    /* background-color: yellow; */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+#page8 #box #top .photo{
+    width: 600px;
+    height: 300px;
+    /* background-color: springgreen; */
+  
+}
+#page8 #box #top .photo .photo-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+  
+#page8 #box #top .photo:hover .photo-inner {
+    transform: rotateY(180deg);
+}
+  
+#page8 #box #top .photo .photo-front, .photo-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+#page8 #box #top .photo .photo-front {
+    background-color: #232323;
+    font-family: yank;
+    text-transform: capitalize;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+  
+#page8 #box #top .photo .photo-back {
+    background-color:tomato;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+#page8 #box #top .photo .photo-back #pic{
+    width: 100px;
+    height: 100px;
+    /* background-color: #f0f; */
+    border-radius: 50%;
+    margin: 10px 0;
+    background-image: url(./images/profile.jpg);
+    background-size: cover;
+}
+#page8 #box #top .photo .photo-back h1{
+    font-family: druk;
+    font-size: 4.5vw;
+    line-height: 1;
+    text-transform: capitalize;
+}
+#page8 #box #top .photo .photo-back h3{
+    font-size: 1.5vw;
+    line-height: 1;
+    font-family: gilroy;
+}
+#page8 #box #top .photo .photo-back p{
+    font-size: 2vw;
+    font-family: yank;
+    padding: 20px 0;
+    color: springgreen;
+}
+#page8 #box #top .photo #part2{
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    font-size: 3vw;
+    flex-wrap: wrap;
+}
+#page8 #box #top .photo #part2 a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#page8 #box #middle{
+    width: 100%;
+    height: 35%;
+    /* background-color: rgb(0, 255, 30); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page8 #box #middle button{
+    padding: 80px 100px;
+    font-size: 2vw;
+    color: white;
+    font-family: gilroy;
+    font-weight: bold;
+    background:linear-gradient(to right,#561DAA,#DA069D);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    border: none;
+    transition: all 0.5s ease;
+}
+#page8 #box #middle button:hover{
+    box-shadow: 
+    inset 0 0 60px whitesmoke,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+}
+
+#page8 #box #bottom{
+    width: 100%;
+    height: 15%;
+    /* background-color: rgb(115, 0, 255); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.3vw;
+    font-family: gilroy;
+    color: white;
+    text-transform: capitalize;
+    text-decoration-line: underline;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
