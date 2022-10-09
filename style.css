@@ -22,6 +22,9 @@ html,body{
 button,i{
     cursor: pointer;
 }
+button:hover{
+    scale: 1.2;
+}
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* Main Body*/
 #main{
@@ -79,9 +82,9 @@ button,i{
     align-items: flex-start;
 }
 #page1 #data #left h1{
-    font-family: gilroy;
+    font-family: yank;
     font-size: 6vw;
-    line-height: 1;
+    line-height: 8vw;
 }
 #page1 #data #left h1 span{
     color:rgb(160, 20, 160);
@@ -103,6 +106,7 @@ button,i{
     color: white;
     background:linear-gradient(to right,#561DAA,#DA069D);
     border: none;
+    transition: all 1s ease;
     border-radius: 50px;
 }
 #page1 #data #left button:hover{
@@ -340,6 +344,7 @@ button,i{
     font-family: gilroy;
 }
 #page3 #box1 #box2 .part button{
+    transition: all 1s ease;
     border: none;
     background-color: transparent;
     color: white;
@@ -394,6 +399,7 @@ button,i{
     text-transform: capitalize;
 }
 #page4 #box #text button{
+    transition: all 1s ease;
     padding: 20px 40px;
     font-size: 1.3vw;
     text-transform: uppercase;
@@ -485,6 +491,7 @@ button,i{
     color: red;
 }
 #page5 #bottom .box .text button{
+    transition: all 1s ease;
     padding: 10px 40px;
     color: white;
     background-color: red;
@@ -586,6 +593,7 @@ button,i{
     font-size: 1.5vw;
 }
 #page6 .swiper-slide .box button{
+    transition: all 1s ease;
     padding: 10px 40px;
     border: 2px solid red;
     border-radius: 50px;
@@ -654,6 +662,7 @@ button,i{
     
 }
 #page7 #text button{
+    transition: all 1s ease;
     margin: 20px 10px;
     font-size: 1.3vw;
     padding: 20px 40px;
@@ -820,6 +829,7 @@ button,i{
     justify-content: center;
 }
 #page8 #box #middle button{
+    transition: all 1s ease;
     padding: 80px 100px;
     font-size: 2vw;
     color: white;
