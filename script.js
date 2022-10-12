@@ -23,6 +23,17 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
+// --------------------------------------------------------------------------------------------------------------------------
+
+document.body.addEventListener("mousemove", function(data){
+    gsap.to(".cir",{
+        x:data.clientX,
+        y:data.clientY,
+        stagger:-0.04
+    })
+})
+
+
 // ---------------------------------------------------------------------------------------------
 
 // Page 1 multiples cards
