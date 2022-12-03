@@ -34,15 +34,23 @@ var swiper = new Swiper(".mySwiper", {
 // Page 1 multiples cards
 function page1cards(){
     var page1=[
-        {image:"./images/p1img2.jpg"},
-        {image:"./images/p1img3.jpg"},
-        {image:"./images/p1img4.jpg"},
-        {image:"./images/p1img5.jpg"},
+        {image:"./images/p1img2.jpg",name:"Salad",price:149},
+        {image:"./images/p1img3.jpg",name:"Salad",price:135},
+        {image:"./images/p1img4.jpg",name:"Salad",price:120},
+        {image:"./images/p1img5.jpg",name:"Salad",price:111},
     ]
     var clutter="";
     page1.forEach(function(data){
     clutter+=`<div class="box">
                 <img src="${data.image}" alt="">
+                <div class="text">
+                        <h1>${data.name}</h1>
+                        <h3>Rs ${data.price}/-</h3>
+                        <div id="btn"> 
+                            <a href="#"><button>Add to chart</button></a>
+                            <a href="#"><button>Order Now</button></a>
+                        </div>    
+                </div>
             </div>`
 })
 document.querySelector("#page1 #bottom").innerHTML=clutter;
@@ -77,14 +85,14 @@ page3cards();
 
 
 // Page 6 multiples cards
-function page6cards(){
+function page5cards(){
     var page6=[
-        {name:"double burger",price:"Rs 199", image:"./images/p6img1.jpg"},
-        {name:"Veg burger",price:"Rs 119", image:"./images/p6img2.jpg"},
-        {name:"Bacon Burger",price:"Rs 299", image:"./images/p6img3.jpg"},
-        {name:"Special burger",price:"Rs 169", image:"./images/p6img4.jpg"},
-        {name:"black burger",price:"Rs 149", image:"./images/p6img5.jpg"},
-        {name:"king burger",price:"Rs 201", image:"./images/p6img6.jpg"}
+        {name:"double burger",price:"199", image:"./images/p6img1.jpg"},
+        {name:"Veg burger",price:"119", image:"./images/p6img2.jpg"},
+        {name:"Bacon Burger",price:"299", image:"./images/p6img3.jpg"},
+        {name:"Special burger",price:"169", image:"./images/p6img4.jpg"},
+        {name:"black burger",price:"149", image:"./images/p6img5.jpg"},
+        {name:"king burger",price:"201", image:"./images/p6img6.jpg"}
     ]
     var clutter="";
 page6.forEach(function(data){
@@ -92,11 +100,14 @@ page6.forEach(function(data){
                     <img src="${data.image}" alt="">
                     <div class="text">
                         <h2>${data.name}</h2>
-                        <h3>${data.price}</h3>
-                        <button>Add to cart</button>
+                        <h3>Rs ${data.price}/-</h3>
+                        <div id="btn"> 
+                            <a href="#"><button>Add to chart</button></a>
+                            <a href="#"><button>Order Now</button></a>
+                        </div>
                     </div>
                 </div>`
 })
 document.querySelector("#page5 #bottom").innerHTML=clutter;
 }
-page6cards();
+page5cards();

@@ -28,7 +28,7 @@
         justify-content: flex-start;
     }
     #page1 #data #left h1{
-        font-size: 14vw; 
+        font-size: 12vw; 
         line-height: 1;       
     }
     
@@ -66,6 +66,12 @@
         gap: 10px;
         padding: 10px;
     }
+    #page1 #bottom .box img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.5s ease;
+    }
     #page1 #bottom::-webkit-scrollbar{
         display: none;
     }
@@ -73,6 +79,25 @@
         width: 80%;
         height: 100%;
         padding: 20px 0;
+    }
+    #page1 #bottom .box .text{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(122, 120, 120, 0.781);
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%,0);
+        transition: all .5s ease;
+    }
+    #page1 #bottom .box .text h1{
+        font-size: 14vw;
+    }
+    #page1 #bottom .box .text h3{
+        font-size: 6vw;
+    }
+    #page1 #bottom .box .text #btn button{
+        font-size: 4vw;
     }
     #page1 #swipe{
         width: 100%;
@@ -85,8 +110,10 @@
         font-family: gilroy;
         font-size: 5vw;
         padding-bottom: 20px;
-        
+        color: white;
+        opacity: .7;
     }
+    
 
         
 /* ----------------------------------------------------------------------------- */
@@ -215,13 +242,9 @@
         gap: 10px;
         padding: 0;
     }
-    #page4 #box #text h2{
-        font-size: 3.5vw;
-        font-family: gilroy;
-    }
+    
     #page4 #box #text h1{
         font-size: 13vw;
-        font-family: gilroy;
     }
     #page4 #box #text button{
         padding: 15px 30px;
@@ -250,15 +273,18 @@
         justify-content: center;
         font-size: 5vw;
         font-family: gilroy;
+        color: white;
         text-transform: capitalize;
     }
 
     #page5 #bottom{
         height: 40vh;
         padding: 10px 0;
-        flex-direction: row;
+        flex-direction: column;
         flex-shrink: 0;
         overflow-x: auto;
+        flex-wrap: wrap;
+        padding: 10px;
     }
     #page5 #bottom .box{
         width: 80%;
@@ -267,14 +293,14 @@
         width: 50%;
     }
     #page5 #bottom .box .text h2{
-        font-size: 5vw;
+        font-size: 5.5vw;
     }
     #page5 #bottom .box .text h3{
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
     #page5 #bottom .box .text button{
-        padding: 10px 30px;
-        font-size: 3vw;
+        padding: 10px 20px;
+        font-size: 4vw;
     }
 
 
